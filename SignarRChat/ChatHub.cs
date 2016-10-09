@@ -10,7 +10,7 @@ namespace SignarRChat
         public void Send(string name, string message)
         {
             // Call the broadcastMessage method to update clients.
-            Clients.All.broadcastMessage(name + " (" + DateTime.Now.ToString("HH:mm:ss") + ")", message);
+            Clients.All.broadcastMessage(name, message);
         }
     }
 }
